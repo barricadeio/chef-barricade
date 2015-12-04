@@ -1,9 +1,6 @@
-Barricade CHANGELOG
-=========================
+# Barricade CHANGELOG
 
-This file is used to list changes made in each version of the barricade-agent cookbook.
+## 0.1.0
 
-0.1.0
------
-- [David Coallier] - Initial release of barricade-agent
-- [King'ori Maina] - Initial Contribution of the agent
+- [David Coallier](https://twitter.com/davidcoallier) - Initial release of barricade-agent
+- [King'ori Maina](https://twitter.com/itsmrwave) - Initial Contribution of the agent
