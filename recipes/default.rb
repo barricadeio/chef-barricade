@@ -12,7 +12,6 @@
 #
 remote_file "#{Chef::Config[:file_cache_path]}/barricade_agent_install.sh" do
   source node['barricade']['install_script']
-  checksum 'SOME_HASH_VALUE'
   mode '0755'
   ignore_failure false
   action :create
@@ -36,7 +35,6 @@ template "/etc/barricade/barricade.cfg" do
     :devices         => node['barricade']['devices'],
     :api_host        => node['barricade']['api_host'],
     :loglevel        => node['barricade']['loglevel'],
-    :protocols       => node['barricade']['protocols'],
     :concurrency     => node['barricade']['concurrency'],
     :barricade_key   => node['barricade']['barricade_key'],
     :flush_frequency => node['barricade']['flush_frequency'],

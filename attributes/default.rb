@@ -36,15 +36,6 @@ default['barricade']['tags']           = "production, chef"
 # barricade agent. We recommend not changing them unless you really      #
 # know what you are doing :-) Feel free to ask us for more information.  #
 ##########################################################################
-#
-# Parameter: protocols
-# Value:     A list of protocols to intercept. In the event where a protocol
-#            needs to be removed or added, it can be done here.
-# Default:   Ethernet,IP,IPv6,DNS,UDP,TCP,ICMP,ICMPv6,IGMP,ARP,HTTP,Raw
-# Note:      The engine will gracefully handle and learn from any existing
-#            protocol information sent to it.
-#
-default['barricade']['protocols']      = "Ethernet,IP,IPv6,DNS,UDP,TCP,ICMP,ICMPv6,IGMP,ARP,HTTP,Raw"
 
 #
 # Parameter: filter

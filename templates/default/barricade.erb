@@ -25,17 +25,6 @@ license_key=<%= @barricade_key %>
 tag=<%= @tags %>
 
 #
-# Parameter: protocols
-# Value:     A list of protocols to intercept. In the event where a protocol
-#            needs to be removed or added, it can be done here.
-# Default:   Ethernet,IP,IPv6,DNS,UDP,TCP,ICMP,ICMPv6,IGMP,ARP,HTTP,Raw
-# Note:      The engine will gracefully handle and learn from any existing
-#            protocol information sent to it.
-#
-# protocols=Ethernet,IP,IPv6,DNS,UDP,TCP,ICMP,ICMPv6,IGMP,ARP,HTTP,Raw
-protocols=<%= @protocols %>
-
-#
 # Parameter: filter
 # Value:     The default network filter which is compatible with libpcap's
 #            format (i.e. "port not 53 and port not 22" to stop listening for
