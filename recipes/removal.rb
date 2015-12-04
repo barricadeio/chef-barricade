@@ -8,8 +8,6 @@ service "barricade" do
 end
 
 # Remove the installation
-execute 'agent_removal' do
-  command 'dpkg -r barricade'
-  ignore_failure false
-  action :run
+package "barricade" do
+  action :remove
 end

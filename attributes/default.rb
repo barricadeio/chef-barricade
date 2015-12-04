@@ -96,12 +96,3 @@ default['barricade']['concurrency'] = "1"
 # Default:   10000
 #
 default['barricade']['high_water_mark'] = "10000"
-
-#
-# Parameter: api_host
-# Value:     Barricade API host.
-#            The agent communicates to this API to retrieve information like whether the agent should be enabled or disabled, etc.
-#
-# Default:   app.barricade.io
-#
-default['barricade']['api_host'] = "app.barricade.io"

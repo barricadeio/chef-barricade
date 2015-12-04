@@ -33,7 +33,6 @@ template "/etc/barricade/barricade.cfg" do
     :tags            => node['barricade']['tags'],
     :filter          => node['barricade']['filter'],
     :devices         => node['barricade']['devices'],
-    :api_host        => node['barricade']['api_host'],
     :loglevel        => node['barricade']['loglevel'],
     :concurrency     => node['barricade']['concurrency'],
     :barricade_key   => node['barricade']['barricade_key'],

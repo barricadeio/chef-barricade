@@ -34,7 +34,9 @@ tag=<%= @tags %>
 #
 #
 # filter=port not 22
-filter=<%= @filter %>
+<% unless @filter.empty? -%>
+filter=<%= value %>
+<% end %>
 
 #
 # Parameter: collector_host
@@ -145,22 +147,3 @@ concurrency=<%= @concurrency %>
 #
 # high_water_mark=10000
 high_water_mark=<%= @high_water_mark %>
-
-#
-# Parameter: api_host
-# Value:     Barricade API host.
-#            The agent communicates to this API to retrieve information like whether the agent should be enabled or disabled, etc.
-#
-# Default:   app.barricade.io
-#
-# api_host=app.barricade.io
-api_host=<%= @api_host %>
-
-#
-# Parameter: api_port
-# Value:     Barricade API port.
-#            The agent communicates to this API to retrieve information like whether the agent should be enabled or disabled, etc.
-#
-# Default:   443
-#
-# api_port=443
