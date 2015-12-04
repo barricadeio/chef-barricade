@@ -46,7 +46,7 @@ See the attributes/default.rb for more advanced attributes related to the agent.
 
 </table>
 
-Usage
+### Usage
 #### barricade::default
 
 Make sure to retrieve your [automation key](https://app.barricade.io/dashboard/settings/team/profile) from your [Barricade](https://app.barricade.io) dashboard and edit the `attributes/default.rb` file to specifiy your `barricade_key`. 
@@ -58,7 +58,6 @@ Just include `barricade` in your node's `run_list`:
 
 ```json
 {
-  "name":"my_node",
   "run_list": [
     "recipe[barricade]"
   ]

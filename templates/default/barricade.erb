@@ -22,7 +22,9 @@ license_key=<%= @barricade_key %>
 # Default:   production
 # Docs:      https://docs.barricade.io/help_center/platform/tags
 # tag=production
+<% unless @tags.empty? -%>
 tag=<%= @tags %>
+<% end %>
 
 #
 # Parameter: filter
@@ -73,7 +75,9 @@ filter=<%= value %>
 # Default:   error
 #
 # loglevel=error
+<% unless @loglevel.empty? -%>
 loglevel=<%= @loglevel %>
+<% end %>
 
 #
 # Parameter: ssl
@@ -113,7 +117,9 @@ loglevel=<%= @loglevel %>
 #            the more up to date a picture of your network Barricade has.
 # Default:   1
 # flush_frequency=1
+<% unless @flush_frequency.empty? -%>
 flush_frequency=<%= @flush_frequency %>
+<% end %>
 
 #
 # Parameter: concurrency
@@ -124,7 +130,9 @@ flush_frequency=<%= @flush_frequency %>
 # Default:   1
 #
 # concurrency=1
+<% unless @concurrency.empty? -%>
 concurrency=<%= @concurrency %>
+<% end %>
 
 #
 # Parameter: id_path
@@ -146,4 +154,6 @@ concurrency=<%= @concurrency %>
 # Default:   10000
 #
 # high_water_mark=10000
+<% unless @high_water_mark.empty? -%>
 high_water_mark=<%= @high_water_mark %>
+<% end %>
