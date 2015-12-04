@@ -6,7 +6,6 @@ have confidence in your infrastructure's security and gain immediate completely 
 your security operations and continuously test your security as you develop and build.
 
 ## Requirements
-------------
 
 - Ubuntu 12.04 (64-bit)
 - Ubuntu 14.04 LTS (64-bit)
@@ -15,7 +14,6 @@ your security operations and continuously test your security as you develop and 
 - CentOS 7.0 (64-bit)
 
 ## Attributes
-----------
 
 #### barricade::default
 <table>
@@ -49,7 +47,6 @@ See the attributes/default.rb for more advanced attributes related to the agent.
 </table>
 
 Usage
------
 #### barricade::default
 
 Make sure to retrieve your [automation key](https://app.barricade.io/dashboard/settings/team/profile) from your [Barricade](https://app.barricade.io) dashboard and edit the `attributes/default.rb` file to specifiy your `barricade_key`. 
