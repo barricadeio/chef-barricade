@@ -30,7 +30,7 @@ template "/etc/barricade/barricade.cfg" do
   source "barricade.erb"
   mode "0644"
   variables(
-    :tags            => node['barricade']['tags'],
+    :tags            => node['barricade']['tags'].join(','),
     :filter          => node['barricade']['filter'],
     :devices         => node['barricade']['devices'],
     :loglevel        => node['barricade']['loglevel'],

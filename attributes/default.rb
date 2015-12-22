@@ -26,7 +26,7 @@ default['barricade']['install_script'] = "https://app.barricade.io/install/#{nod
 # Default:   production
 # Docs:      https://docs.barricade.io/help_center/platform/tags
 #
-default['barricade']['tags'] = "production, chef"
+default['barricade']['tags'] = ["production", "chef"]
 
 
 ##########################################################################
