@@ -4,6 +4,7 @@
 # page located the following URL:
 #   - https://app.barricade.io/dashboard/settings/team/profile
 #
+
 #
 # Parameter: license_key
 # Value:     A 40-character hexadecimal string provided by Barricade.io. This
@@ -24,7 +25,6 @@ default['barricade']['install_script'] = "https://app.barricade.io/install/#{nod
 #            Set multiple tags by comma-separating them.
 #
 # Default:   production
-# Docs:      https://docs.barricade.io/help_center/platform/tags
 #
 default['barricade']['tags'] = ["production", "chef"]
 
