@@ -10,7 +10,7 @@
 #            parameter is required for all transactions and in order for the
 #            security monitor to start.
 #
-default['barricade']['barricade_key']  = "YOUR_BARRICADE_KEY"
+default['barricade']['barricade_key'] = "YOUR_BARRICADE_KEY"
 default['barricade']['install_script'] = "https://app.barricade.io/install/#{node['barricade']['barricade_key']}/install.sh"
 
 #
@@ -26,7 +26,7 @@ default['barricade']['install_script'] = "https://app.barricade.io/install/#{nod
 # Default:   production
 # Docs:      https://docs.barricade.io/help_center/platform/tags
 #
-default['barricade']['tags']           = "production, chef"
+default['barricade']['tags'] = "production, chef"
 
 
 ##########################################################################
@@ -46,7 +46,7 @@ default['barricade']['tags']           = "production, chef"
 #
 # filter=port not 22
 #
-default['barricade']['filter']   =  ""
+default['barricade']['filter'] =  ""
 
 #
 # Parameter: loglevel
@@ -60,7 +60,7 @@ default['barricade']['filter']   =  ""
 #                verbosedebug -> Show very detailed agent-level debug messages
 # Default:   error
 #
-default['barricade']['loglevel'] =  "error"
+default['barricade']['loglevel'] = "error"
 
 #
 # Parameter: flush_frequency
