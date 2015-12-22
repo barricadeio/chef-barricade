@@ -3,8 +3,6 @@
 # Your automation key (:barricade_key) can be retrieved from your team
 # page located the following URL:
 #   - https://app.barricade.io/dashboard/settings/team/profile
-   
-
 #
 #
 # Parameter: license_key
