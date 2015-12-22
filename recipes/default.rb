@@ -2,7 +2,7 @@
 # Cookbook Name:: barricade
 # Recipe:: default
 #
-# Copyright 2015, Barricade.io 
+# Copyright 2015, Barricade.io
 # Author: King'ori Maina
 #
 #

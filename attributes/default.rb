@@ -5,7 +5,7 @@
 #   - https://app.barricade.io/dashboard/settings/team/profile
    
 
-
+#
 #
 # Parameter: license_key
 # Value:     A 40-character hexadecimal string provided by Barricade.io. This
@@ -71,7 +71,7 @@ default['barricade']['loglevel'] =  "error"
 #            distributed for varying ingress. The more frequently data is flushed,
 #            the more up to date a picture of your network Barricade has.
 # Default:   1
-# 
+#
 default['barricade']['flush_frequency'] = "1"
 
 #
