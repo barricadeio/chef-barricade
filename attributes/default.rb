@@ -3,8 +3,7 @@
 # Your automation key (:barricade_key) can be retrieved from your team
 # page located the following URL:
 #   - https://app.barricade.io/dashboard/settings/team/profile
-   
-
+#
 
 #
 # Parameter: license_key
@@ -12,7 +11,7 @@
 #            parameter is required for all transactions and in order for the
 #            security monitor to start.
 #
-default['barricade']['barricade_key']  = "YOUR_BARRICADE_KEY"
+default['barricade']['barricade_key'] = "YOUR_BARRICADE_KEY"
 default['barricade']['install_script'] = "https://app.barricade.io/install/#{node['barricade']['barricade_key']}/install.sh"
 
 #
@@ -26,9 +25,8 @@ default['barricade']['install_script'] = "https://app.barricade.io/install/#{nod
 #            Set multiple tags by comma-separating them.
 #
 # Default:   production
-# Docs:      https://docs.barricade.io/help_center/platform/tags
 #
-default['barricade']['tags']           = "production, chef"
+default['barricade']['tags'] = ["production", "chef"]
 
 
 ##########################################################################
@@ -48,7 +46,7 @@ default['barricade']['tags']           = "production, chef"
 #
 # filter=port not 22
 #
-default['barricade']['filter']   =  ""
+default['barricade']['filter'] =  ""
 
 #
 # Parameter: loglevel
@@ -62,7 +60,7 @@ default['barricade']['filter']   =  ""
 #                verbosedebug -> Show very detailed agent-level debug messages
 # Default:   error
 #
-default['barricade']['loglevel'] =  "error"
+default['barricade']['loglevel'] = "error"
 
 #
 # Parameter: flush_frequency
@@ -71,7 +69,7 @@ default['barricade']['loglevel'] =  "error"
 #            distributed for varying ingress. The more frequently data is flushed,
 #            the more up to date a picture of your network Barricade has.
 # Default:   1
-# 
+#
 default['barricade']['flush_frequency'] = "1"
 
 #

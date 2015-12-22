@@ -2,7 +2,7 @@
 # Cookbook Name:: barricade
 # Recipe:: default
 #
-# Copyright 2015, Barricade.io 
+# Copyright 2015, Barricade.io
 # Author: King'ori Maina
 #
 #
@@ -30,7 +30,7 @@ template "/etc/barricade/barricade.cfg" do
   source "barricade.erb"
   mode "0644"
   variables(
-    :tags            => node['barricade']['tags'],
+    :tags            => node['barricade']['tags'].join(','),
     :filter          => node['barricade']['filter'],
     :devices         => node['barricade']['devices'],
     :loglevel        => node['barricade']['loglevel'],
