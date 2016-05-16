@@ -2,7 +2,7 @@
 # Cookbook Name:: barricade
 # Recipe:: default
 #
-# Copyright 2015, Barricade.io 
+# Copyright 2016, Barricade.io
 # Author: King'ori Maina
 #
 #
@@ -30,15 +30,19 @@ template "/etc/barricade/barricade.cfg" do
   source "barricade.erb"
   mode "0644"
   variables(
-    :tags            => node['barricade']['tags'],
+    :tags            => node['barricade']['tags'].join(','),
     :filter          => node['barricade']['filter'],
-    :devices         => node['barricade']['devices'],
+    :api_host        => node['barricade']['api_host'],
     :loglevel        => node['barricade']['loglevel'],
-    :concurrency     => node['barricade']['concurrency'],
+    :cache_ttl       => node['barricade']['cache_ttl'],
+    :public_ip       => node['barricade']['public_ip'],
+    :private_ip      => node['barricade']['private_ip'],
     :barricade_key   => node['barricade']['barricade_key'],
-    :flush_frequency => node['barricade']['flush_frequency'],
-    :high_water_mark => node['barricade']['high_water_mark']
-
+    :collector_host  => node['barricade']['collector_host'],
+    :collector_port  => node['barricade']['collector_port'],
+    :spooler_memory  => node['barricade']['spooler_memory'],
+    :cache_directory => node['barricade']['cache_directory'],
+    :flush_frequency => node['barricade']['flush_frequency']
   )
 end
 
