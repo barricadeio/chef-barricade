@@ -38,7 +38,7 @@ your security operations and continuously test your security as you develop and 
   <tr>
     <td><tt>['barricade']['tags']</tt></td>
     <td>String</td>
-    <td>An arbitrary scalar value taht will be used by your and your team to effectively <tt>tag</tt> results sent to the Barricade platform. Use comma-separation to set multiple tags</td>
+    <td>An arbitrary scalar value that will be used by your and your team to effectively <tt>tag</tt> results sent to the Barricade platform. Use comma-separation to set multiple tags</td>
     <td><tt>prod, chef</tt></td>
   </tr>
 
